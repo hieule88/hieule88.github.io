@@ -19,4 +19,4 @@ jobs:
       - name: Setup Proselint
         run: pip install proselint
       - name: Run Proselint Check
-        run: proselint **/*.md
+        run: find . -name "*.md" -exec proselint {} \;
